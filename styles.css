@@ -1,0 +1,123 @@
+:root {
+  --black: #111;
+  --white: #fff;
+  --gray: #f5f5f5;
+  --border: #d9d9d9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--black);
+  background: var(--white);
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--black);
+  padding: 1rem 0 1.5rem;
+  text-align: center;
+}
+
+.logo-link {
+  display: inline-block;
+  max-width: 350px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.5rem;
+  border: 1px solid var(--border);
+}
+
+h1 {
+  letter-spacing: 0.08em;
+  margin: 0.25rem 0;
+}
+
+.tagline {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--black);
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  border-bottom-color: var(--black);
+}
+
+.hero {
+  background: var(--gray);
+  padding: 4rem 0;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: var(--black);
+  color: var(--white);
+  text-decoration: none;
+  border: 1px solid var(--black);
+}
+
+.button:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--black);
+  padding: 1rem;
+  background: var(--white);
+}
+
+.sermon-list {
+  padding-left: 1.2rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--black);
+  margin-top: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+}
